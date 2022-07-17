@@ -1,0 +1,583 @@
+2022/07/16 09:55:33 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseModel.php(395): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(1019): BaseModel->gridRow('code,type,title...')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(1032): BaseLib->indexGridRow(Object(AdviseController), Object(Advise), 0, 'id', 'code,type,title...', '\xE8\xAF\xA6\xE7\xBB\x86\xE4\xBF\xA1\xE6\x81\xAF:Ad...', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(1053): BaseLib->indexGridRows(Object(AdviseController), Array, 0, 'id', 'code,type,title...', '\xE8\xAF\xA6\xE7\xBB\x86\xE4\xBF\xA1\xE6\x81\xAF:Ad...')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(1266): BaseLib->indexTable(Object(AdviseController), Object(Advise), Array, Array)
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(1282): BaseLib->showTableData(Object(AdviseController), Object(Advise), '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#7 D:\wamp64\www\hsyiitest\include\functions.php(1081): BaseLib->indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#8 D:\wamp64\www\hsyiitest\admin\views\Advise\indexOkAssign.php(11): hsYii_indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#9 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#10 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#11 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#12 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('indexOkAssign', Array, true)
+#13 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('indexOkAssign', Array)
+#14 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(398): BaseController->_list(Object(Advise), Object(CDbCriteria), 'indexOkAssign', Array)
+#15 [internal function]: AdviseController->actionIndexOkAssign('')
+#16 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#17 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#18 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexOkAssign')
+#22 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexOkA...')
+#23 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#25 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexOkAssign
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
+2022/07/16 09:55:34 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseModel.php(395): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(1019): BaseModel->gridRow('code,type,title...')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(1032): BaseLib->indexGridRow(Object(AdviseController), Object(Advise), 0, 'id', 'code,type,title...', '\xE8\xAF\xA6\xE7\xBB\x86\xE4\xBF\xA1\xE6\x81\xAF:Ad...', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(1053): BaseLib->indexGridRows(Object(AdviseController), Array, 0, 'id', 'code,type,title...', '\xE8\xAF\xA6\xE7\xBB\x86\xE4\xBF\xA1\xE6\x81\xAF:Ad...')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(1266): BaseLib->indexTable(Object(AdviseController), Object(Advise), Array, Array)
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(1282): BaseLib->showTableData(Object(AdviseController), Object(Advise), '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#7 D:\wamp64\www\hsyiitest\include\functions.php(1081): BaseLib->indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#8 D:\wamp64\www\hsyiitest\admin\views\Advise\indexOkAssign.php(11): hsYii_indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#9 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#10 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#11 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#12 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('indexOkAssign', Array, true)
+#13 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('indexOkAssign', Array)
+#14 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(398): BaseController->_list(Object(Advise), Object(CDbCriteria), 'indexOkAssign', Array)
+#15 [internal function]: AdviseController->actionIndexOkAssign('')
+#16 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#17 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#18 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexOkAssign')
+#22 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexOkA...')
+#23 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#25 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexOkAssign
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
+2022/07/16 09:55:35 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseModel.php(395): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(1019): BaseModel->gridRow('code,type,title...')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(1032): BaseLib->indexGridRow(Object(AdviseController), Object(Advise), 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateAs...', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(1053): BaseLib->indexGridRows(Object(AdviseController), Array, 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateAs...')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(1266): BaseLib->indexTable(Object(AdviseController), Object(Advise), Array, Array)
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(1282): BaseLib->showTableData(Object(AdviseController), Object(Advise), '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#7 D:\wamp64\www\hsyiitest\include\functions.php(1081): BaseLib->indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#8 D:\wamp64\www\hsyiitest\admin\views\Advise\indexAssign.php(11): hsYii_indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#9 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#10 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#11 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#12 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('indexAssign', Array, true)
+#13 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('indexAssign', Array)
+#14 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(386): BaseController->_list(Object(Advise), Object(CDbCriteria), 'indexAssign', Array)
+#15 [internal function]: AdviseController->actionIndexAssign('')
+#16 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#17 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#18 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexAssign')
+#22 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexAss...')
+#23 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#25 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexAssign
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
+2022/07/16 09:55:36 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseModel.php(395): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(1019): BaseModel->gridRow('code,type,title...')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(1032): BaseLib->indexGridRow(Object(AdviseController), Object(Advise), 0, 'id', 'code,type,title...', '\xE8\xAF\xA6\xE7\xBB\x86\xE4\xBF\xA1\xE6\x81\xAF:Ad...', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(1053): BaseLib->indexGridRows(Object(AdviseController), Array, 0, 'id', 'code,type,title...', '\xE8\xAF\xA6\xE7\xBB\x86\xE4\xBF\xA1\xE6\x81\xAF:Ad...')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(1266): BaseLib->indexTable(Object(AdviseController), Object(Advise), Array, Array)
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(1282): BaseLib->showTableData(Object(AdviseController), Object(Advise), '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#7 D:\wamp64\www\hsyiitest\include\functions.php(1081): BaseLib->indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#8 D:\wamp64\www\hsyiitest\admin\views\Advise\indexOkAssign.php(11): hsYii_indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#9 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#10 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#11 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#12 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('indexOkAssign', Array, true)
+#13 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('indexOkAssign', Array)
+#14 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(398): BaseController->_list(Object(Advise), Object(CDbCriteria), 'indexOkAssign', Array)
+#15 [internal function]: AdviseController->actionIndexOkAssign('')
+#16 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#17 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#18 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexOkAssign')
+#22 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexOkA...')
+#23 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#25 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexOkAssign
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
+2022/07/16 09:55:37 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseModel.php(395): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(1019): BaseModel->gridRow('code,type,title...')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(1032): BaseLib->indexGridRow(Object(AdviseController), Object(Advise), 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateAs...', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(1053): BaseLib->indexGridRows(Object(AdviseController), Array, 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateAs...')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(1266): BaseLib->indexTable(Object(AdviseController), Object(Advise), Array, Array)
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(1282): BaseLib->showTableData(Object(AdviseController), Object(Advise), '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#7 D:\wamp64\www\hsyiitest\include\functions.php(1081): BaseLib->indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#8 D:\wamp64\www\hsyiitest\admin\views\Advise\indexAssign.php(11): hsYii_indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#9 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#10 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#11 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#12 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('indexAssign', Array, true)
+#13 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('indexAssign', Array)
+#14 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(386): BaseController->_list(Object(Advise), Object(CDbCriteria), 'indexAssign', Array)
+#15 [internal function]: AdviseController->actionIndexAssign('')
+#16 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#17 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#18 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexAssign')
+#22 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexAss...')
+#23 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#25 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexAssign
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
+2022/07/16 09:55:39 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseModel.php(395): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(1019): BaseModel->gridRow('code,type,title...')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(1032): BaseLib->indexGridRow(Object(AdviseController), Object(Advise), 0, 'id', 'code,type,title...', '\xE8\xAF\xA6\xE7\xBB\x86\xE4\xBF\xA1\xE6\x81\xAF:Ad...', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(1053): BaseLib->indexGridRows(Object(AdviseController), Array, 0, 'id', 'code,type,title...', '\xE8\xAF\xA6\xE7\xBB\x86\xE4\xBF\xA1\xE6\x81\xAF:Ad...')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(1266): BaseLib->indexTable(Object(AdviseController), Object(Advise), Array, Array)
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(1282): BaseLib->showTableData(Object(AdviseController), Object(Advise), '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#7 D:\wamp64\www\hsyiitest\include\functions.php(1081): BaseLib->indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#8 D:\wamp64\www\hsyiitest\admin\views\Advise\indexOkAssign.php(11): hsYii_indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#9 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#10 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#11 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#12 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('indexOkAssign', Array, true)
+#13 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('indexOkAssign', Array)
+#14 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(398): BaseController->_list(Object(Advise), Object(CDbCriteria), 'indexOkAssign', Array)
+#15 [internal function]: AdviseController->actionIndexOkAssign('')
+#16 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#17 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#18 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexOkAssign')
+#22 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexOkA...')
+#23 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#25 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexOkAssign
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
+2022/07/16 09:55:57 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseModel.php(395): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(1019): BaseModel->gridRow('code,type,title...')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(1032): BaseLib->indexGridRow(Object(AdviseController), Object(Advise), 0, 'id', 'code,type,title...', '\xE8\xAF\xA6\xE7\xBB\x86\xE4\xBF\xA1\xE6\x81\xAF:Ad...', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(1053): BaseLib->indexGridRows(Object(AdviseController), Array, 0, 'id', 'code,type,title...', '\xE8\xAF\xA6\xE7\xBB\x86\xE4\xBF\xA1\xE6\x81\xAF:Ad...')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(1266): BaseLib->indexTable(Object(AdviseController), Object(Advise), Array, Array)
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(1282): BaseLib->showTableData(Object(AdviseController), Object(Advise), '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#7 D:\wamp64\www\hsyiitest\include\functions.php(1081): BaseLib->indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#8 D:\wamp64\www\hsyiitest\admin\views\Advise\indexOkAssign.php(11): hsYii_indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#9 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#10 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#11 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#12 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('indexOkAssign', Array, true)
+#13 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('indexOkAssign', Array)
+#14 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(398): BaseController->_list(Object(Advise), Object(CDbCriteria), 'indexOkAssign', Array)
+#15 [internal function]: AdviseController->actionIndexOkAssign('')
+#16 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#17 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#18 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexOkAssign')
+#22 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexOkA...')
+#23 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#25 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexOkAssign
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
+2022/07/16 09:57:35 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseModel.php(395): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(1019): BaseModel->gridRow('code,type,title...')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(1032): BaseLib->indexGridRow(Object(AdviseController), Object(Advise), 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateAs...', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(1053): BaseLib->indexGridRows(Object(AdviseController), Array, 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateAs...')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(1266): BaseLib->indexTable(Object(AdviseController), Object(Advise), Array, Array)
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(1282): BaseLib->showTableData(Object(AdviseController), Object(Advise), '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#7 D:\wamp64\www\hsyiitest\include\functions.php(1081): BaseLib->indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#8 D:\wamp64\www\hsyiitest\admin\views\Advise\indexAssign.php(11): hsYii_indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#9 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#10 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#11 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#12 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('indexAssign', Array, true)
+#13 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('indexAssign', Array)
+#14 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(386): BaseController->_list(Object(Advise), Object(CDbCriteria), 'indexAssign', Array)
+#15 [internal function]: AdviseController->actionIndexAssign('')
+#16 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#17 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#18 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexAssign')
+#22 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexAss...')
+#23 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#25 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexAssign
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
+2022/07/16 09:57:36 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseModel.php(395): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(1019): BaseModel->gridRow('code,type,title...')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(1032): BaseLib->indexGridRow(Object(AdviseController), Object(Advise), 0, 'id', 'code,type,title...', '', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(1053): BaseLib->indexGridRows(Object(AdviseController), Array, 0, 'id', 'code,type,title...', '')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(1266): BaseLib->indexTable(Object(AdviseController), Object(Advise), Array, Array)
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(1282): BaseLib->showTableData(Object(AdviseController), Object(Advise), '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#7 D:\wamp64\www\hsyiitest\include\functions.php(1081): BaseLib->indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#8 D:\wamp64\www\hsyiitest\admin\views\Advise\indexPenAssign.php(11): hsYii_indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#9 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#10 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#11 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#12 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('indexPenAssign', Array, true)
+#13 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('indexPenAssign', Array)
+#14 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(374): BaseController->_list(Object(Advise), Object(CDbCriteria), 'indexPenAssign', Array)
+#15 [internal function]: AdviseController->actionIndexPenAssign('')
+#16 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#17 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#18 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexPenAssign')
+#22 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexPen...')
+#23 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#25 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexPenAssign
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
+2022/07/16 10:04:41 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseModel.php(395): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(1019): BaseModel->gridRow('code,type,title...')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(1032): BaseLib->indexGridRow(Object(AdviseController), Object(Advise), 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateDe...', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(1053): BaseLib->indexGridRows(Object(AdviseController), Array, 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateDe...')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(1266): BaseLib->indexTable(Object(AdviseController), Object(Advise), Array, Array)
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(1282): BaseLib->showTableData(Object(AdviseController), Object(Advise), '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#7 D:\wamp64\www\hsyiitest\include\functions.php(1081): BaseLib->indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#8 D:\wamp64\www\hsyiitest\admin\views\Advise\indexDeal.php(11): hsYii_indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#9 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#10 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#11 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#12 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('indexDeal', Array, true)
+#13 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('indexDeal', Array)
+#14 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(410): BaseController->_list(Object(Advise), Object(CDbCriteria), 'indexDeal', Array)
+#15 [internal function]: AdviseController->actionIndexDeal('')
+#16 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#17 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#18 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexDeal')
+#22 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexDea...')
+#23 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#25 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexDeal
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
+2022/07/16 10:04:42 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseModel.php(395): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(1019): BaseModel->gridRow('code,type,title...')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(1032): BaseLib->indexGridRow(Object(AdviseController), Object(Advise), 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateFi...', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(1053): BaseLib->indexGridRows(Object(AdviseController), Array, 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateFi...')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(1266): BaseLib->indexTable(Object(AdviseController), Object(Advise), Array, Array)
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(1282): BaseLib->showTableData(Object(AdviseController), Object(Advise), '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#7 D:\wamp64\www\hsyiitest\include\functions.php(1081): BaseLib->indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#8 D:\wamp64\www\hsyiitest\admin\views\Advise\indexFinish.php(11): hsYii_indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#9 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#10 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#11 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#12 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('indexFinish', Array, true)
+#13 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('indexFinish', Array)
+#14 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(423): BaseController->_list(Object(Advise), Object(CDbCriteria), 'indexFinish', Array)
+#15 [internal function]: AdviseController->actionIndexFinish('')
+#16 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#17 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#18 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexFinish')
+#22 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexFin...')
+#23 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#25 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexFinish
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
+2022/07/16 10:04:43 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseModel.php(395): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(1019): BaseModel->gridRow('code,type,title...')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(1032): BaseLib->indexGridRow(Object(AdviseController), Object(Advise), 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateDe...', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(1053): BaseLib->indexGridRows(Object(AdviseController), Array, 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateDe...')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(1266): BaseLib->indexTable(Object(AdviseController), Object(Advise), Array, Array)
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(1282): BaseLib->showTableData(Object(AdviseController), Object(Advise), '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#7 D:\wamp64\www\hsyiitest\include\functions.php(1081): BaseLib->indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#8 D:\wamp64\www\hsyiitest\admin\views\Advise\indexDeal.php(11): hsYii_indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#9 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#10 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#11 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#12 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('indexDeal', Array, true)
+#13 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('indexDeal', Array)
+#14 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(410): BaseController->_list(Object(Advise), Object(CDbCriteria), 'indexDeal', Array)
+#15 [internal function]: AdviseController->actionIndexDeal('')
+#16 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#17 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#18 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexDeal')
+#22 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexDea...')
+#23 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#25 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexDeal
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
+2022/07/16 10:04:44 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseModel.php(395): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(1019): BaseModel->gridRow('code,type,title...')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(1032): BaseLib->indexGridRow(Object(AdviseController), Object(Advise), 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateFi...', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(1053): BaseLib->indexGridRows(Object(AdviseController), Array, 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateFi...')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(1266): BaseLib->indexTable(Object(AdviseController), Object(Advise), Array, Array)
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(1282): BaseLib->showTableData(Object(AdviseController), Object(Advise), '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#7 D:\wamp64\www\hsyiitest\include\functions.php(1081): BaseLib->indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#8 D:\wamp64\www\hsyiitest\admin\views\Advise\indexFinish.php(11): hsYii_indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#9 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#10 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#11 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#12 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('indexFinish', Array, true)
+#13 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('indexFinish', Array)
+#14 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(423): BaseController->_list(Object(Advise), Object(CDbCriteria), 'indexFinish', Array)
+#15 [internal function]: AdviseController->actionIndexFinish('')
+#16 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#17 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#18 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexFinish')
+#22 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexFin...')
+#23 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#25 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexFinish
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
+2022/07/16 10:04:47 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseModel.php(395): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(1019): BaseModel->gridRow('code,type,title...')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(1032): BaseLib->indexGridRow(Object(AdviseController), Object(Advise), 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateDe...', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(1053): BaseLib->indexGridRows(Object(AdviseController), Array, 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateDe...')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(1266): BaseLib->indexTable(Object(AdviseController), Object(Advise), Array, Array)
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(1282): BaseLib->showTableData(Object(AdviseController), Object(Advise), '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#7 D:\wamp64\www\hsyiitest\include\functions.php(1081): BaseLib->indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#8 D:\wamp64\www\hsyiitest\admin\views\Advise\indexDeal.php(11): hsYii_indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#9 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#10 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#11 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#12 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('indexDeal', Array, true)
+#13 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('indexDeal', Array)
+#14 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(410): BaseController->_list(Object(Advise), Object(CDbCriteria), 'indexDeal', Array)
+#15 [internal function]: AdviseController->actionIndexDeal('')
+#16 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#17 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#18 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexDeal')
+#22 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexDea...')
+#23 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#25 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexDeal
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
+2022/07/16 10:04:47 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseModel.php(395): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(1019): BaseModel->gridRow('code,type,title...')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(1032): BaseLib->indexGridRow(Object(AdviseController), Object(Advise), 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateFi...', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(1053): BaseLib->indexGridRows(Object(AdviseController), Array, 0, 'id', 'code,type,title...', '\xE7\xBC\x96\xE8\xBE\x91:updateFi...')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(1266): BaseLib->indexTable(Object(AdviseController), Object(Advise), Array, Array)
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(1282): BaseLib->showTableData(Object(AdviseController), Object(Advise), '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#7 D:\wamp64\www\hsyiitest\include\functions.php(1081): BaseLib->indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#8 D:\wamp64\www\hsyiitest\admin\views\Advise\indexFinish.php(11): hsYii_indexShow(Object(AdviseController), Object(Advise), Array, '\xE5\xBB\xBA\xE8\xAE\xAE\xE7\xB1\xBB\xE5\x9E\x8B=PC...', Array, Array, Object(CPagination))
+#9 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#10 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#11 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#12 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('indexFinish', Array, true)
+#13 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('indexFinish', Array)
+#14 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(423): BaseController->_list(Object(Advise), Object(CDbCriteria), 'indexFinish', Array)
+#15 [internal function]: AdviseController->actionIndexFinish('')
+#16 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#17 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#18 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexFinish')
+#22 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexFin...')
+#23 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#25 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexFinish
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
+2022/07/16 10:56:08 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'prefinish_time' at row 1. The SQL statement executed was: UPDATE `advise` SET `id`=:yp0, `code`=:yp1, `session`=:yp2, `time`=:yp3, `title`=:yp4, `type`=:yp5, `proposer`=:yp6, `submit_status`=:yp7, `submit_time`=:yp8, `advise_content`=:yp9, `undertaker`=:yp10, `reply_content`=:yp11, `is_submit`=:yp12, `is_judge`=:yp13, `is_assign`=:yp14, `is_deal`=:yp15, `is_finish`=:yp16, `is_reply`=:yp17, `is_niming`=:yp18, `is_huifang`=:yp19, `judge_time`=:yp20, `prefinish_time`=:yp21, `finish_time`=:yp22, `deal_situation`=:yp23, `is_confirm`=:yp24, `is_accept`=:yp25, `ok_judge`=:yp26, `is_passjudge`=:yp27, `ok_assign`=:yp28, `okjudge_status`=:yp29, `penjudge_status`=:yp30, `passjudge_status`=:yp31, `failjudge_status`=:yp32, `okassign_status`=:yp33, `penassign_status`=:yp34, `pendeal_status`=:yp35, `penfinish_status`=:yp36, `okreply_status`=:yp37 WHERE `advise`.`id`=54.
+2022/07/16 10:56:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'prefinish_time' at row 1' in D:\wamp64\www\hsyiitest\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('54', Array)
+#2 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(266): CActiveRecord->save(false)
+#4 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(162): AdviseController->saveData(Object(Advise), Array)
+#5 [internal function]: AdviseController->actionUpdateAssign('54')
+#6 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#7 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#8 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('updateAssign')
+#12 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('advise/updateAs...')
+#13 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/hsyiitest/index.php?r=advise/updateAssign&id=54
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php?r=advise/updateAssign&id=54
+---
+2022/07/16 10:56:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'prefinish_time' at row 1. The SQL statement executed was: UPDATE `advise` SET `id`=:yp0, `code`=:yp1, `session`=:yp2, `time`=:yp3, `title`=:yp4, `type`=:yp5, `proposer`=:yp6, `submit_status`=:yp7, `submit_time`=:yp8, `advise_content`=:yp9, `undertaker`=:yp10, `reply_content`=:yp11, `is_submit`=:yp12, `is_judge`=:yp13, `is_assign`=:yp14, `is_deal`=:yp15, `is_finish`=:yp16, `is_reply`=:yp17, `is_niming`=:yp18, `is_huifang`=:yp19, `judge_time`=:yp20, `prefinish_time`=:yp21, `finish_time`=:yp22, `deal_situation`=:yp23, `is_confirm`=:yp24, `is_accept`=:yp25, `ok_judge`=:yp26, `is_passjudge`=:yp27, `ok_assign`=:yp28, `okjudge_status`=:yp29, `penjudge_status`=:yp30, `passjudge_status`=:yp31, `failjudge_status`=:yp32, `okassign_status`=:yp33, `penassign_status`=:yp34, `pendeal_status`=:yp35, `penfinish_status`=:yp36, `okreply_status`=:yp37 WHERE `advise`.`id`=55.
+2022/07/16 10:56:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'prefinish_time' at row 1' in D:\wamp64\www\hsyiitest\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('55', Array)
+#2 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(266): CActiveRecord->save(false)
+#4 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(162): AdviseController->saveData(Object(Advise), Array)
+#5 [internal function]: AdviseController->actionUpdateAssign('55')
+#6 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#7 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#8 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('updateAssign')
+#12 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('advise/updateAs...')
+#13 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/hsyiitest/index.php?r=advise/updateAssign&id=55
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php?r=advise/updateAssign&id=55
+---
+2022/07/16 10:57:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'prefinish_time' at row 1. The SQL statement executed was: UPDATE `advise` SET `id`=:yp0, `code`=:yp1, `session`=:yp2, `time`=:yp3, `title`=:yp4, `type`=:yp5, `proposer`=:yp6, `submit_status`=:yp7, `submit_time`=:yp8, `advise_content`=:yp9, `undertaker`=:yp10, `reply_content`=:yp11, `is_submit`=:yp12, `is_judge`=:yp13, `is_assign`=:yp14, `is_deal`=:yp15, `is_finish`=:yp16, `is_reply`=:yp17, `is_niming`=:yp18, `is_huifang`=:yp19, `judge_time`=:yp20, `prefinish_time`=:yp21, `finish_time`=:yp22, `deal_situation`=:yp23, `is_confirm`=:yp24, `is_accept`=:yp25, `ok_judge`=:yp26, `is_passjudge`=:yp27, `ok_assign`=:yp28, `okjudge_status`=:yp29, `penjudge_status`=:yp30, `passjudge_status`=:yp31, `failjudge_status`=:yp32, `okassign_status`=:yp33, `penassign_status`=:yp34, `pendeal_status`=:yp35, `penfinish_status`=:yp36, `okreply_status`=:yp37 WHERE `advise`.`id`=55.
+2022/07/16 10:57:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'prefinish_time' at row 1' in D:\wamp64\www\hsyiitest\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('55', Array)
+#2 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(266): CActiveRecord->save(false)
+#4 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(162): AdviseController->saveData(Object(Advise), Array)
+#5 [internal function]: AdviseController->actionUpdateAssign('55')
+#6 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#7 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#8 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('updateAssign')
+#12 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('advise/updateAs...')
+#13 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/hsyiitest/index.php?r=advise/updateAssign&id=55
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php?r=advise/updateAssign&id=55
+---
+2022/07/16 11:23:10 [error] [exception.CException] exception 'CException' with message '属性 "Advise.status" 未被定义.' in D:\wamp64\www\hsyiitest\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 D:\wamp64\www\hsyiitest\framework\base\CModel.php(596): CActiveRecord->__get('status')
+#2 D:\wamp64\www\hsyiitest\models\BaseLib.php(320): CModel->offsetGet('status')
+#3 D:\wamp64\www\hsyiitest\models\BaseLib.php(360): BaseLib->tdInput(Object(CActiveForm), Object(Advise), 'status:1:1', 1)
+#4 D:\wamp64\www\hsyiitest\models\BaseLib.php(235): BaseLib->tdLabel(Object(CActiveForm), Object(Advise), 'status:1:1')
+#5 D:\wamp64\www\hsyiitest\models\BaseLib.php(189): BaseLib->getTdData(Object(CActiveForm), Object(Advise), 'status:label:1:...')
+#6 D:\wamp64\www\hsyiitest\models\BaseLib.php(180): BaseLib->trInput(Object(CActiveForm), Object(Advise), 'code:label:1:1,...', '1', '')
+#7 D:\wamp64\www\hsyiitest\models\BaseLib.php(414): BaseLib->getTableLine(Object(CActiveForm), Object(Advise), 'code:label:1:1,...', '1')
+#8 D:\wamp64\www\hsyiitest\models\BaseLib.php(1109): BaseLib->tableInput(Object(CActiveForm), Object(Advise), 'code:label:1:1,...')
+#9 D:\wamp64\www\hsyiitest\models\BaseLib.php(1253): BaseLib->tableInputBox(Object(CActiveForm), Object(Advise), 'code:label:1:1,...')
+#10 D:\wamp64\www\hsyiitest\include\functions.php(1075): BaseLib->updateBox(Object(AdviseController), Object(Advise), '1:3=code:label:...', '\xE7\xAD\x94\xE5\xA4\x8D\xE8\xAF\xA6\xE6\x83\x85', '\xE5\x8F\x96\xE6\xB6\x88')
+#11 D:\wamp64\www\hsyiitest\admin\views\Advise\previewReply.php(5): hsYii_updateData(Object(AdviseController), Object(Advise), '1:3=code:label:...', '\xE7\xAD\x94\xE5\xA4\x8D\xE8\xAF\xA6\xE6\x83\x85', '\xE5\x8F\x96\xE6\xB6\x88')
+#12 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(126): require('D:\\wamp64\\www\\h...')
+#13 D:\wamp64\www\hsyiitest\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp64\\www\\h...', Array, true)
+#14 D:\wamp64\www\hsyiitest\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp64\\www\\h...', Array, true)
+#15 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('previewReply', Array, true)
+#16 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(494): CController->render('previewReply', Array)
+#17 [internal function]: AdviseController->actionPreviewReply('15')
+#18 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#19 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#20 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#22 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('previewReply')
+#24 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/previewR...')
+#25 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#27 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/previewReply&id=15
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php?r=Advise/indexReply
+---
+2022/07/17 00:34:55 [error] [exception.CException] exception 'CException' with message 'AdviseController 无法找到请求的视图 "OkindexDeal".' in D:\wamp64\www\hsyiitest\framework\web\CController.php:881
+Stack trace:
+#0 D:\wamp64\www\hsyiitest\framework\web\CController.php(785): CController->renderPartial('OkindexDeal', Array, true)
+#1 D:\wamp64\www\hsyiitest\admin\components\BaseController.php(59): CController->render('OkindexDeal', Array)
+#2 D:\wamp64\www\hsyiitest\admin\controllers\AdviseController.php(427): BaseController->_list(Object(Advise), Object(CDbCriteria), 'OkindexDeal', Array)
+#3 [internal function]: AdviseController->actionIndexOkDeal('')
+#4 D:\wamp64\www\hsyiitest\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AdviseController), Array)
+#5 D:\wamp64\www\hsyiitest\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdviseController), Object(ReflectionMethod), Array)
+#6 D:\wamp64\www\hsyiitest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp64\www\hsyiitest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp64\www\hsyiitest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(282): CController->run('indexOkDeal')
+#10 D:\wamp64\www\hsyiitest\framework\web\CWebApplication.php(141): CWebApplication->runController('Advise/indexOkD...')
+#11 D:\wamp64\www\hsyiitest\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp64\www\hsyiitest\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/hsyiitest/index.php?r=Advise/indexOkDeal
+HTTP_REFERER=http://127.0.0.1/hsyiitest/index.php
+---
