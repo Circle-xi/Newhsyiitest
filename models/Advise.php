@@ -63,6 +63,7 @@ class Advise extends BaseModel {
         'okfinish_status'=>'状态',//已处理完成
         'okreply_status' =>'状态',//已答复
         'oksubmit_status'=>'状态',//已提交
+        'update_time'=>'更新时间',//更新时间
         );
 
      //x2_scourse,id,code,value,subjectsetting,subpic,id,x2_scourse;id;code;value;subjectsetting;subpic;id;
